@@ -1,3 +1,30 @@
+function clicou(){
+    document.getElementById("agradecimento").innerHTML = "<b>Obrigada por clicar</b>";
+} //o getElementeById pega o id e linka ele com o botão ou o que eu pedi pra ser linkado. O innerHTML insere texto do HTML no JS
+
+function redirecionar(){
+    window.open("https://google.com.br");
+} //abre outra página do navegador <- redireciona sem sair do site origem
+    //window.location.href = "https://google.com.br/"; abre um outro site na mesma página <- redireiona saindo do site origem
+
+function trocar(elemento){
+    elemento.innerHTML = "Obrigada por passar o mouse"; //trás o elemento e formata da forma que você quiser em JS
+    //document.getElementById("mousemove").innerHTML = "Obrigada por passar o mouse";
+    //alert("trocar texto");
+}
+
+function voltar(elemento){
+    elemento.innerHTML = "Passe o mouse aqui"; //trás o elemento e formata da forma que você quiser em JS
+    //document.getElementById("mousemove").innerHTML = "Passe o mouse aqui";
+}
+
+function load(){
+    alert("página carregada"); //alerta que a página carregou
+}
+
+function funcaoChange(elemento){
+    console.log(elemento.value); //nesse caso sempre pegando o value
+}
 /*function soma(n1, n2){
     return n1 + n2;
 } //função de soma
@@ -8,7 +35,7 @@ alert(soma(5,10));*/
 }
 alert(setReplace("Vai Japão", "Japão", "Brasil")) aqui está setada a frase, o que é pra mudar da frase e o que é pra colocar no lugar com o replace*/
 
-function validaIdade(idade){
+/*function validaIdade(idade){
     let validar;
     if(idade >= 18){
         validar = true
@@ -20,7 +47,7 @@ function validaIdade(idade){
 }
 
 let idade = parseInt(prompt("digite sua idade"));
-console.log(validaIdade(idade));
+console.log(validaIdade(idade));*/
 
 
 

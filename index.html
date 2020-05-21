@@ -6,7 +6,18 @@
         <script type="text/javascript" src="js/main.js"></script>
     </head>
 
-    <body>
-        <h1>Estudando Bootcamp Carrefour</h1>
+    <body onload="load()"> <!--chama a função que avisa que a página está carregada-->
+        <button type="button" onclick="clicou()">clique aqui</button>
+        <p id="agradecimento" onclick="redirecionar()"></p>
+        <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p> 
+        <!-- com o this você declara que você é o próprio elemento e pra onde você for, a formatação irá junto -->
+        
+        <select onchange="funcaoChange(this)"> <!--sempre que a pessoa mudar o valor, você consegue coletar qual valor ele colocou antes-->
+            <option value="1">Valor 1</option> 
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
     </body>
+
 </html>
